@@ -11,7 +11,7 @@ mydb = mysql.connector.connect(
 myCursor = mydb.cursor()
 
 testFormula = "INSERT INTO test (age, name) VALUES (%s, %s)"
-chadOne = (20, "Zamn")
+chadOne = (20, "Balls")
 
 myCursor.execute(testFormula, chadOne)
 
