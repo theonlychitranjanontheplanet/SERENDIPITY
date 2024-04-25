@@ -1,4 +1,6 @@
 from openai import OpenAI
+from databaseFlirt import intoDatabase
+
 
 # Securely getting your API key
 api_key = "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"
@@ -11,9 +13,17 @@ def get_embedding(text, model="text-embedding-3-small"):
 
 # Example usage
 
+    
+    
+def putEmbeddingIntoDB(text):
+    
+    vector=get_embedding(text)
+    vector_str = ','.join(map(str, vector))
+    
+    intoDatabase(1,text,vector_str)
+    
 
-def giveMeEmbedding(text):
-    return get_embedding(text)
+
 
 
     

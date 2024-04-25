@@ -26,6 +26,13 @@ def chat_with_gpt(text, chat_log=None):
     chat_log.append({"role": "system", "content": response})
 
     print("AI: ", response)
+    
+    print(chat_log[-2])
+    content_to_edit = chat_log[-2]['content']
+    updated_content = content_to_edit.replace(customInstruction, "")
+    chat_log[-2]['content'] = updated_content
+    print(chat_log[-2])
+    
     return chat_log
 
 def run_chat():
@@ -34,7 +41,6 @@ def run_chat():
     while text != "end":
         
         text+= customInstruction
-
         chat_log = chat_with_gpt(text, chat_log)
         text = input("You: ")
     

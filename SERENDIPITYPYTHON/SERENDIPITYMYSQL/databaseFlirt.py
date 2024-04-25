@@ -10,9 +10,12 @@ mydb = mysql.connector.connect(
 
 myCursor = mydb.cursor()
 
-testFormula = "INSERT INTO test (age, name) VALUES (%s, %s)"
-chadOne = (20, "Balls")
 
-myCursor.execute(testFormula, chadOne)
+def intoDatabase(ID, text, vector):
+    
+    formula = "INSERT INTO memory (ID, memoryWords, vector) VALUES (%s, %s, %s)"
+    variables = (ID, text, vector)
 
-mydb.commit()
+    myCursor.execute(formula, variables)
+
+    mydb.commit()
