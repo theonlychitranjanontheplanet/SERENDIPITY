@@ -21,7 +21,9 @@ def putEmbeddingIntoDB(text):
     vector_str = ','.join(map(str, vector))
     
     intoDatabase(1,text,vector_str)
-    
+
+
+putEmbeddingIntoDB("Hello table!")
 
 
 
