@@ -1,5 +1,5 @@
 from openai import OpenAI
-from databaseFlirt import intoDatabase
+from database import intoDatabase
 
 
 # Securely getting your API key
