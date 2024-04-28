@@ -19,3 +19,13 @@ def intoDatabase(ID, text, vector):
     myCursor.execute(formula, variables)
 
     mydb.commit()
+
+
+
+
+def clearDatabase():
+    myCursor.execute("TRUNCATE memory")
+    
+
+
+clearDatabase()

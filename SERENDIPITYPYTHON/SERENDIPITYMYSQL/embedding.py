@@ -23,7 +23,20 @@ def putEmbeddingIntoDB(text):
     intoDatabase(1,text,vector_str)
 
 
-putEmbeddingIntoDB("Hello table!")
+putEmbeddingIntoDB("I like sharks!")
+putEmbeddingIntoDB("Sharks are cute animals!")
+putEmbeddingIntoDB("Chicken tastes good")
+putEmbeddingIntoDB("Dogs are adorable pets!!")
+putEmbeddingIntoDB("The industrial revolution has been a disaster for the human race")
+putEmbeddingIntoDB("Baby shark doo dooo doo")
+putEmbeddingIntoDB("China is a powerful technology nation")
+putEmbeddingIntoDB("Gayness is completely valid! IT's OKAY TO LIKE CUTE TWINKS!!")
+putEmbeddingIntoDB("Homoseuality is a disease")
+putEmbeddingIntoDB("I wonder what the future innovations in tech be like..hmm")
+
+
+
+
 
 
 
